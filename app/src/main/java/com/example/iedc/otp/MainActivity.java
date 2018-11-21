@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
                 ApiInterface retroGet = Retrofit_Otp.getRetrofitOTP().create(ApiInterface.class);
 
-                String un = "sasicollege", pass = "SITE2002", from = "INSITE", to = "9963912971", type = "1";
+                String un = "your username", pass = "your password", from = "Sender heading", to = "reciever number", type = "1";
 
                 Call<String> retro = retroGet.getOTP(un, pass, from, to, "this is otp message", type);
 
